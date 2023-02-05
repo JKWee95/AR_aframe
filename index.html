@@ -59,18 +59,21 @@
   
   var groom_time=0;
   var bride_time=0;
+  var time_model = 0
   //modelViewer.animationName = 'Bride_Action'
   self.setInterval(() => {
     if (modelViewer.animationName === 'Bride_Action'){
       //bride_time = modelViewer.currentTime;
-      modelViewer.currentTime += 0.5;
+      time_model = time_model + 0.5;
+      modelViewer.currentTime = time_model;
       modelViewer.animationName = 'Groom_Action';
       console.log("groom time");
       console.log(modelViewer.currentTime);
     }
     else{
       //groom_time = modelViewer.currentTime;
-      modelViewer.currentTime += 0.5;
+      time_model = time_model + 0.5;
+      modelViewer.currentTime = time_model;
       modelViewer.animationName = 'Bride_Action';
       console.log("bride time");
       console.log(modelViewer.currentTime);
