@@ -64,7 +64,7 @@
   self.setInterval(() => {
     if (modelViewer.animationName === 'Bride_Action'){
       //bride_time = modelViewer.currentTime;
-      time_model = time_model + 0.5;
+      time_model = time_model + 0.05;
       modelViewer.currentTime = time_model;
       modelViewer.animationName = 'Groom_Action';
       console.log("groom time");
@@ -72,7 +72,7 @@
     }
     else{
       //groom_time = modelViewer.currentTime;
-      time_model = time_model + 0.5;
+      time_model = time_model + 0.05;
       modelViewer.currentTime = time_model;
       modelViewer.animationName = 'Bride_Action';
       console.log("bride time");
