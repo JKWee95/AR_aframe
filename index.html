@@ -57,10 +57,16 @@
         alert("Successfuly load!");
     }, { once: true });
   
-  modelViewer.animationName = 'ArmatureAction'
-  //self.setInterval(() => {
-  //  modelViewer.animationName = 'ArmatureAction'
-  //}, 1500.0);
+  //modelViewer.animationName = 'Bride_Action'
+  self.setInterval(() => {
+    if (modelViewer.animationName === 'Bride_Action'){
+      modelViewer.animationName = 'Groom_Action'
+    }
+    else{
+      modelViewer.animationName = 'Bride_Action'
+    }
+      
+  }, 5000.0);
   
 </script>
 
