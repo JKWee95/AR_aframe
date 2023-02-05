@@ -61,9 +61,11 @@
   self.setInterval(() => {
     if (modelViewer.animationName === 'Bride_Action'){
       modelViewer.animationName = 'Groom_Action'
+      alert("groom_action")
     }
     else{
       modelViewer.animationName = 'Bride_Action'
+      alert("bride_action")
     }
       
   }, 2000.0);
