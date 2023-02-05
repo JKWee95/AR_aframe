@@ -65,11 +65,15 @@
       bride_time = modelViewer.currentTime;
       modelViewer.currentTime = groom_time;
       modelViewer.animationName = 'Groom_Action';
+      console.log("groom time");
+      console.log(groom_time);
     }
     else{
       groom_time = modelViewer.currentTime;
       modelViewer.currentTime = bride_time;
       modelViewer.animationName = 'Bride_Action';
+      console.log("bride time");
+      console.log(bride_time);
     }
       
   }, 500.0);
