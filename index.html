@@ -56,6 +56,11 @@
   document.querySelector(".model_viewer_main").addEventListener('load', e => {
         alert("Successfuly load!");
     }, { once: true });
+  
+  self.setInterval(() => {
+    alert(modelViewer.animationName)
+  }, 3000.0);
+  
 </script>
 
 <style>
